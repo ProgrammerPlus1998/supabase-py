@@ -7,10 +7,7 @@ from io import BufferedReader, FileIO
 from pathlib import Path
 from typing import Any, Dict, List, Literal, Optional, Union, cast
 
-try:
-    from httpx2 import Client, Headers, HTTPStatusError, Response
-except ImportError:
-    from httpx import Client, Headers, HTTPStatusError, Response
+from httpx2 import Client, Headers, HTTPStatusError, Response
 from yarl import URL
 
 from ..constants import DEFAULT_FILE_OPTIONS, DEFAULT_SEARCH_OPTIONS

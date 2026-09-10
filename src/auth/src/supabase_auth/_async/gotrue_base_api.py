@@ -2,10 +2,7 @@ from __future__ import annotations
 
 from typing import Any, Dict, Optional
 
-try:
-    from httpx2 import AsyncClient, HTTPStatusError, QueryParams, Response
-except ImportError:
-    from httpx import AsyncClient, HTTPStatusError, QueryParams, Response
+from httpx2 import AsyncClient, HTTPStatusError, QueryParams, Response
 from pydantic import BaseModel
 from typing_extensions import Literal, Self
 

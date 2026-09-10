@@ -3,10 +3,7 @@ from __future__ import annotations
 import warnings
 from typing import Any, Optional
 
-try:
-    from httpx2 import AsyncClient, Headers, HTTPStatusError, Response
-except ImportError:
-    from httpx import AsyncClient, Headers, HTTPStatusError, Response
+from httpx2 import AsyncClient, Headers, HTTPStatusError, Response
 from yarl import URL
 
 from ..exceptions import StorageApiError

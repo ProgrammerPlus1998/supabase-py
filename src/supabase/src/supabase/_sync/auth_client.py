@@ -1,9 +1,6 @@
 from typing import Dict, Optional
 
-try:
-    from httpx2 import Client
-except ImportError:
-    from httpx import Client
+from httpx2 import Client
 from supabase_auth import (
     AuthFlowType,
     SyncGoTrueClient,

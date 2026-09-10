@@ -4,10 +4,7 @@ import sys
 from collections.abc import Mapping, Sequence
 from typing import Union
 
-try:
-    from httpx2 import AsyncClient, BasicAuth, Client, Headers, QueryParams
-except ImportError:
-    from httpx import AsyncClient, BasicAuth, Client, Headers, QueryParams
+from httpx2 import AsyncClient, BasicAuth, Client, Headers, QueryParams
 from pydantic import TypeAdapter
 from typing_extensions import TypeAliasType
 from yarl import URL

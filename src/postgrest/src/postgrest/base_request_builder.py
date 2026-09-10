@@ -21,14 +21,8 @@ from typing import (
     overload,
 )
 
-try:
-    from httpx2 import AsyncClient, BasicAuth, Client, Headers, QueryParams
-except ImportError:
-    from httpx import AsyncClient, BasicAuth, Client, Headers, QueryParams
-try:
-    from httpx2 import Response as RequestResponse
-except ImportError:
-    from httpx import Response as RequestResponse
+from httpx2 import AsyncClient, BasicAuth, Client, Headers, QueryParams
+from httpx2 import Response as RequestResponse
 from pydantic import BaseModel, ValidationError
 from yarl import URL
 

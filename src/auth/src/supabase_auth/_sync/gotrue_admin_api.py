@@ -2,10 +2,7 @@ from __future__ import annotations
 
 from typing import Dict, List, Optional
 
-try:
-    from httpx2 import Client, QueryParams
-except ImportError:
-    from httpx import Client, QueryParams
+from httpx2 import Client, QueryParams
 
 from ..helpers import (
     model_validate,

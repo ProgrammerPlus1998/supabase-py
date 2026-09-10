@@ -1,10 +1,7 @@
 from typing import AsyncIterable
 
 import pytest
-try:
-    from httpx2 import AsyncClient, Headers, QueryParams
-except ImportError:
-    from httpx import AsyncClient, Headers, QueryParams
+from httpx2 import AsyncClient, Headers, QueryParams
 from yarl import URL
 
 from postgrest import AsyncFilterRequestBuilder

@@ -5,10 +5,7 @@ import sys
 from typing import Optional
 from warnings import warn
 
-try:
-    from httpx2 import Client, Headers
-except ImportError:
-    from httpx import Client, Headers
+from httpx2 import Client, Headers
 
 from storage3.constants import DEFAULT_TIMEOUT
 

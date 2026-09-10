@@ -2,10 +2,7 @@ import copy
 import re
 from typing import Any, Dict, List, Optional, Union
 
-try:
-    from httpx2 import Timeout
-except ImportError:
-    from httpx import Timeout
+from httpx2 import Timeout
 from postgrest import (
     SyncPostgrestClient,
     SyncRequestBuilder,

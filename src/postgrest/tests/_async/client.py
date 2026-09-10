@@ -1,7 +1,4 @@
-try:
-    from httpx2 import AsyncClient, AsyncHTTPTransport, Limits
-except ImportError:
-    from httpx import AsyncClient, AsyncHTTPTransport, Limits
+from httpx2 import AsyncClient, AsyncHTTPTransport, Limits
 
 from postgrest import AsyncPostgrestClient
 

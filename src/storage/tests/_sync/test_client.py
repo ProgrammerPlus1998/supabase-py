@@ -7,14 +7,8 @@ from unittest.mock import Mock, patch
 from uuid import uuid4
 
 import pytest
-try:
-    from httpx2 import Client as HttpxClient
-except ImportError:
-    from httpx import Client as HttpxClient
-try:
-    from httpx2 import HTTPStatusError, Response
-except ImportError:
-    from httpx import HTTPStatusError, Response
+from httpx2 import Client as HttpxClient
+from httpx2 import HTTPStatusError, Response
 from storage3 import SyncStorageClient
 from storage3.exceptions import StorageApiError
 from storage3.utils import StorageException

@@ -2,10 +2,7 @@ from __future__ import annotations
 
 from typing import List, Optional
 
-try:
-    from httpx2 import AsyncClient, Headers
-except ImportError:
-    from httpx import AsyncClient, Headers
+from httpx2 import AsyncClient, Headers
 from yarl import URL
 
 from ..exceptions import StorageApiError, VectorBucketException

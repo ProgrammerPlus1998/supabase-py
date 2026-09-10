@@ -1,9 +1,6 @@
 from typing import Optional
 
-try:
-    from httpx2 import Client, Headers, HTTPStatusError, QueryParams, Response
-except ImportError:
-    from httpx import Client, Headers, HTTPStatusError, QueryParams, Response
+from httpx2 import Client, Headers, HTTPStatusError, QueryParams, Response
 from pydantic import ValidationError
 from yarl import URL
 

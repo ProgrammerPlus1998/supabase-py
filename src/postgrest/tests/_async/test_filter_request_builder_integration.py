@@ -674,10 +674,7 @@ async def test_order_on_foreign_table():
 
 
 async def test_get_retry_503() -> None:
-    try:
-        from httpx2 import Request, Response
-    except ImportError:
-        from httpx import Request, Response
+    from httpx2 import Request, Response
 
     retry_count = 0
     client = rest_client()
@@ -710,10 +707,7 @@ async def test_get_retry_503() -> None:
 
 
 async def test_get_retry_503_does_not_retry_when_disabled() -> None:
-    try:
-        from httpx2 import Request, Response
-    except ImportError:
-        from httpx import Request, Response
+    from httpx2 import Request, Response
 
     retry_count = 0
     client = rest_client()
@@ -748,10 +742,7 @@ async def test_get_retry_503_does_not_retry_when_disabled() -> None:
 
 
 async def test_order_retry_400_doesnt_retry() -> None:
-    try:
-        from httpx2 import Request, Response
-    except ImportError:
-        from httpx import Request, Response
+    from httpx2 import Request, Response
 
     retry_count = 0
     client = rest_client()
